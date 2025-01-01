@@ -1,10 +1,10 @@
-#include <cstdio>
-#include <vector>
+#include <bits/stdc++.h>
+using namespace std;
 
 int main(){
 
     int n; scanf("%d", &n);
-    std::vector<int> a(n + 1);
+    vector<int> a(n + 1);
     int l(-1), r(-1);
 
     for(int p = 1; p <= n; p++){
