@@ -1,5 +1,4 @@
-#include <iostream>
-#include <cctype>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main(){
