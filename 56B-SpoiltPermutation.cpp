@@ -1,23 +1,44 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main(){
+// Determines the smallest range in a sequence that, if reversed, would restore the sequence to its natural order.
+// If the sequence is already ordered, or no such range exists, it prints '0 0'.
 
-    int n; scanf("%d", &n);
-    vector<int> a(n + 1);
-    int l(-1), r(-1);
+int main() {
+    int n;
+    scanf("%d", &n);
+    vector<int> permutation(n + 1);
+    int left = -1, right = -1;
 
-    for(int p = 1; p <= n; p++){
-        scanf("%d", &a[p]);
-        if(p != a[p]){
-            if(l < 0){l = p;}
-            r = p;
+    // Scan through the sequence and identify the first and last positions where the value is misplaced.
+    for (int i = 1; i <= n; i++) {
+        scanf("%d", &permutation[i]);
+        if (permutation[i] != i) {
+            if (left == -1) left = i;
+            right = i;
         }
     }
 
-    if(l < 0){puts("0 0"); return 0;}
-    for(int p = l; p <= r; p++){if(a[p] != l + r - p){puts("0 0"); return 0;}}
-    printf("%d %d\n", l, r);
+    // If the sequence is already sorted, print '0 0'.
+    if (left == -1) {
+        puts("0 0");
+        return 0;
+    }
+
+    // Verify if reversing the identified segment would sort the sequence.
+    bool canSort = true;
+    for (int i = left; i <= right; i++) {
+        if (permutation[i] != right + left - i) {
+            canSort = false;
+            break;
+        }
+    }
+
+    if (canSort) {
+        printf("%d %d\n", left, right);
+    } else {
+        puts("0 0");
+    }
 
     return 0;
 }
