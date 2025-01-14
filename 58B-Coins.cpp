@@ -1,5 +1,9 @@
+
 #include <bits/stdc++.h>
 using namespace std;
+
+// This program finds the prime factorization sequence of a given number n.
+// It uses the Sieve of Eratosthenes to find all primes up to n, then divides n by each prime in order.
 
 int main(){
 
