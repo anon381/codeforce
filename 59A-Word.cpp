@@ -1,5 +1,9 @@
+
 #include <bits/stdc++.h>
 using namespace std;
+
+// This program reads a word and converts all its letters to either lowercase or uppercase.
+// If the word has at least half lowercase letters, it converts the whole word to lowercase; otherwise, to uppercase.
 
 int main(){
     string word; getline(cin, word);
