@@ -1,5 +1,10 @@
+
 #include <bits/stdc++.h>
 using namespace std;
+
+// This program reads a list of integers and calculates a special sum based on the parity of odd numbers.
+// If there are no odd numbers, outputs 0.
+// If the count of odd numbers is even, subtracts the smallest odd from the total sum; otherwise, outputs the total sum.
 
 int main(){
 
