@@ -1,6 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Counts the frequency of each character in the input string.
+// Calculates the sum of squares of these frequencies, representing the number of ways to choose pairs of identical symbols.
+
 int main(){
     
     const int N = 256;
