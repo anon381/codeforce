@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Processes a series of string pairs and computes the number of unique piles based on digit manipulations.
+// Uses a set to ensure uniqueness and handles input parsing for each pile.
 
 int main(){
 
