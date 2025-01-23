@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Prints a sequence of numbers from 1 to n, alternating between the lowest and highest remaining values.
+// This creates a zigzag pattern for the frog's jumps.
 
 int main(){
 
