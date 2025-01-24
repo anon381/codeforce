@@ -1,6 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Calculates the minimum number of intervals needed to cover all presents, given their positions and a fixed interval length.
+// Uses arithmetic to determine the number of intervals between presents.
+
 int main(){
 
     long n, k; scanf("%ld %ld", &n, &k);
