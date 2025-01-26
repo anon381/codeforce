@@ -8,6 +8,11 @@ int main(){
     vector<char> op(N - 1); scanf("%c %c %c\n", &op[0], &op[1], &op[2]);
     long long output(1e13);
     sort(num.begin(), num.end());
+#include <bits/stdc++.h>
+using namespace std;
+
+// Given four numbers and three operators, finds the smallest possible result by trying all permutations and groupings.
+// Uses brute-force and permutation logic to evaluate all possible expressions.
 
     do{
         long long current;
