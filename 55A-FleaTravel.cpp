@@ -2,7 +2,6 @@
 using namespace std;
 
 // Simulates a flea jumping around a circle, marking visited positions.
-// Determines if all positions are visited after a specific number of jumps.
 
 int main(){
 
