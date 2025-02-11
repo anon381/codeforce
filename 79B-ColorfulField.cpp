@@ -1,11 +1,11 @@
-#include <cstdio>
-#include <vector>
-#include <algorithm>
+#include <bits/stdc++.h>
+
+using namespace std;
 
 int main(){
 
     long n, m, k, t; scanf("%ld %ld %ld %ld\n", &n, &m, &k, &t);
-    std::vector<long> wasteCells(k, 0);
+    vector<long> wasteCells(k, 0);
 
     for(long p = 0; p < k; p++){
         long row, col; scanf("%ld %ld\n", &row, &col);
