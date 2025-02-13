@@ -1,15 +1,17 @@
-#include <iostream>
+#include <bits/stdc++.h>
+
+using namespace std;
 
 int main(){
 
-    std::string input; getline(std::cin, input);
-    std::string output("");
+    string input; getline(cin, input);
+    string output("");
 
     for(int k = 0; k < input.size(); k++){
         if(output.empty() || output.back() != input[k]){output += input[k];}
         else{output.pop_back();}
     }
 
-    std::cout << output << std::endl;
+    cout << output << endl;
     return 0;
 }
