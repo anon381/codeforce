@@ -9,6 +9,7 @@ int main(){
     int n(0); scanf("%d", &n);
     // Print the first three colors
     for(int k = 0; k < 3; k++){printf("%c", array[k]);}
+    // Time: O(n), Space: O(1) - prints each character in sequence
     // Print the remaining colors, cycling through the last four
     for(int k = 3; k < n; k++){printf("%c", array[3 + k%4]);}
     puts("");
