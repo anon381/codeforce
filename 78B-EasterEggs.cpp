@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 
 using namespace std;
+// Generates a color sequence for Easter eggs, repeating the pattern as needed for the given length.
 
 int main(){
 
