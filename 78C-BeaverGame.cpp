@@ -11,6 +11,7 @@ int main(){
         // Check for possible winning moves
         bool possible(0);
         for(long p = 1; p * p <= m; p++){
+            // Time: O(sqrt(m)), Space: O(1) - checks all divisors up to sqrt(m)
             // Skip if p is not a divisor of m
             if(m % p > 0){continue;}
             // Check both divisors for the winning condition
