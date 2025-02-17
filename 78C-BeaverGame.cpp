@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 
 using namespace std;
+// Determines the winner of the Beaver Game based on divisibility and game constraints.
 
 int main(){
 
