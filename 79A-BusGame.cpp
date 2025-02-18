@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 
 using namespace std;
+// Simulates a turn-based bus game between two players, updating resources and determining the winner.
 
 int main(){
 
