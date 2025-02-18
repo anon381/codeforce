@@ -9,6 +9,7 @@ int main(){
     bool loser(0);
 
     while(true){
+    // Time: O(1) per turn, Space: O(1) - loop runs until resources are depleted
 
         //Ciel
     // Ciel's turn: try to subtract resources in priority order
