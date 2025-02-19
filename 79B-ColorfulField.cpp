@@ -26,6 +26,7 @@ int main(){
             if(wasteCells[index] < cellNumber){++index;}
             else if(wasteCells[index] >= cellNumber){break;}
         }
+    // Time: O(k + t*k), Space: O(k) - k for wasteCells, t queries each scan up to k
 
         if(wasteCells[index] == cellNumber){puts("Waste");}
         else{
