@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 
 using namespace std;
+// Processes queries about a field, identifying waste and crop types for each cell.
 
 int main(){
 
