@@ -10,6 +10,7 @@ int main(){
     double first  = 30 * (hour%12) + minute/2.0;
     // Calculate the angle of the minute hand
     double second = 6 * minute; 
+    // Time: O(1), Space: O(1) - direct calculation
 
     printf("%.10lf %.10lf", first, second);
     return 0;
