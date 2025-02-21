@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 
 using namespace std;
+// Calculates the angles of clock hands based on input time.
 
 int main(){
 
