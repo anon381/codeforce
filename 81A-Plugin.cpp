@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 
 using namespace std;
+// Processes a string, removing consecutive duplicate characters.
 
 int main(){
 
