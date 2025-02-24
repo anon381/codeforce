@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 
 using namespace std;
+// Formats a sequence of numbers and characters, handling spaces and punctuation.
 
 int main(){
 
