@@ -20,6 +20,7 @@ int main(){
         if((prev && cur == 3 && count == 1) || (p && prev == 1 && cur == 1 && s[p-1] == ' ') || prev == 2){putchar(' ');}
         putchar(s[p]);      
         prev = cur;
+    // Time: O(n), Space: O(1) - processes each character once
     }
 
     return 0;
