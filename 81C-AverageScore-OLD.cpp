@@ -11,23 +11,28 @@ int main(){
     for(long p = 0; p < n; p++){
         scanf("%ld", &f[p].first);
         f[p].second = p;
+    // Time: O(n), Space: O(n) - reads and stores n values
     }
     // Sort f in ascending order if a > b, descending if a < b
     if(a > b){
         sort(f.begin(), f.end());
+    // Time: O(n log n), Space: O(n) - sorting
     }
     else if(a < b){
         sort(f.rbegin(), f.rend());
+    // Time: O(n log n), Space: O(n) - sorting
     }
 
     vector<long> s(n);
     // Assign values to s based on sorted order and threshold a
     for(long p = 0; p < n; p++){
         s[f[p].second] = 1 + (p >= a);
+    // Time: O(n), Space: O(n) - assignment
     }
     // Output the result
     for(long p = 0; p < n; p++){
         printf("%ld ", s[p]);
+    // Time: O(n), Space: O(1) - output
     }
     puts("");
 
