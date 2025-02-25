@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 
 using namespace std;
+// Sorts and assigns values to a sequence based on input parameters.
 int main(){
 
     long n; scanf("%ld", &n);
