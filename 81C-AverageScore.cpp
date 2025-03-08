@@ -1,3 +1,5 @@
+// Time Complexity: O(n log n) (due to sorting)
+// Space Complexity: O(n)
 #include <bits/stdc++.h>
 
 using namespace std;
