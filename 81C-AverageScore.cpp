@@ -1,6 +1,10 @@
 #include <bits/stdc++.h>
 
 using namespace std;
+#include <bits/stdc++.h>
+
+using namespace std;
+// Distributes scores among participants based on input parameters and sorting logic.
 
 int main(){
 
