@@ -3,6 +3,10 @@
 #include <bits/stdc++.h>
 
 using namespace std;
+#include <bits/stdc++.h>
+
+using namespace std;
+// Determines which friend will drink the nth cola in a doubling sequence.
 
 int main(){
 
