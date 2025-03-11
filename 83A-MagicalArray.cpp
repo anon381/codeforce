@@ -1,6 +1,10 @@
 #include <bits/stdc++.h>
 
 using namespace std;
+#include <bits/stdc++.h>
+
+using namespace std;
+// Calculates the total number of contiguous segments of equal values in an array.
 
 int main(){
 
