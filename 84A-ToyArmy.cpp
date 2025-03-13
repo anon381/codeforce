@@ -2,8 +2,13 @@
 // Space Complexity: O(1)
 #include <bits/stdc++.h>
 using namespace std;
-#include <bits/stdc++.h>
-using namespace std;
 // Computes the total number of toy soldiers in the army based on input n.
 
-int main(){int n; scanf("%d", &n);printf("%d\n", 3 * n / 2);return 0;}
+int main(){
+    int n;
+    // Read the number of soldiers
+    scanf("%d", &n);
+    // Calculate and print the total number of toy soldiers
+    printf("%d\n", 3 * n / 2);
+    return 0;
+}
