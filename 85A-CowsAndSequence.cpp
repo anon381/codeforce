@@ -1,6 +1,10 @@
 #include <bits/stdc++.h>
 
 using namespace std;
+#include <bits/stdc++.h>
+
+using namespace std;
+// Generates and prints a sequence of characters based on input n, alternating patterns for even and odd n.
 
 int main(){
 
