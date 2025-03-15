@@ -1,6 +1,10 @@
 #include <bits/stdc++.h>
 
 using namespace std;
+#include <bits/stdc++.h>
+
+using namespace std;
+// Compares two train lengths after reducing by their greatest common divisor and prints the result.
 
 long gcd(long p, long q){return p % q? gcd(q, p % q): q;}
 
