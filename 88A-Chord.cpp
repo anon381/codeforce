@@ -1,3 +1,4 @@
+// Determines if three musical notes form a major, minor, or strange chord.
 // Time Complexity: O(1)
 // Space Complexity: O(1)
 #include <bits/stdc++.h>
