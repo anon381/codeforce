@@ -1,3 +1,4 @@
+// Calculates the minimum number of coins needed for a robbery scenario.
 // Time Complexity: O(n)
 // Space Complexity: O(1)
 #include <bits/stdc++.h>
