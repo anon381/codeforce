@@ -1,3 +1,4 @@
+// Computes the minimum time to transport people using cableways.
 // Time Complexity: O(1)
 // Space Complexity: O(1)
 #include <bits/stdc++.h>
