@@ -1,13 +1,12 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include <map>
+#include <bits/stdc++.h>
+
+using namespace std;
 
 int main(){
 
     const int M = 12;
 
-    std::map<std::string, int> notes;
+    map<string, int> notes;
     notes["C"] = 0; notes["C#"] = 1;
     notes["D"] = 2; notes["D#"] = 3;
     notes["E"] = 4; 
@@ -15,8 +14,8 @@ int main(){
     notes["G"] = 7; notes["G#"] = 8;
     notes["A"] = 9; notes["B"] = 10; notes["H"] = 11;
 
-    std::string x, y, z; std::cin >> x >> y >> z;
-    std::vector<int> s; 
+    string x, y, z; cin >> x >> y >> z;
+    vector<int> s; 
     s.push_back(notes[x]); s.push_back(notes[y]); s.push_back(notes[z]);
     sort(s.begin(), s.end()); 
     s.push_back(s[0] + M);
