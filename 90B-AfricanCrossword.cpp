@@ -1,3 +1,4 @@
+// Removes duplicate letters in rows and columns from a crossword grid.
 // Time Complexity: O(n * m)
 // Space Complexity: O(n * m)
 #include <bits/stdc++.h>
