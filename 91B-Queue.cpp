@@ -1,3 +1,4 @@
+// Determines the minimum number of moves to arrange people in a queue.
 // Time Complexity: O(n log n)
 // Space Complexity: O(n)
 #include <cstdio>
