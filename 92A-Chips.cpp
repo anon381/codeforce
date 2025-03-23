@@ -1,3 +1,4 @@
+// Calculates the remaining chips after distributing them among players.
 // Time Complexity: O(1)
 // Space Complexity: O(1)
 #include <cstdio>
