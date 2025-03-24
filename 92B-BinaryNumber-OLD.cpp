@@ -1,31 +1,27 @@
-#include <cstdio>
-#include <iostream>
-#include <string>
+#include <bits/stdc++.h>
+using namespace std;
 
-std::string transform(std::string input){
-
-    if(input.size() <= 1 || input == "1"){return "1";}
-    else if(input[input.size() - 1] == '0'){return input.substr(0,input.size() - 1);}
-    else if(input[input.size() - 1] == '1'){
-        bool done(0);
-        for(int k = input.size() - 1; k >= 0; k--){
-            if(input[k] == '1'){input[k] = '0';}
-            else if(input[k] == '0'){input[k] = '1'; done = 1; break;}
+int main()
+{
+    string s;
+    cin >> s;
+    int cnt = 0;
+    while (s != "1")
+    {
+        if (s.back() == '0')
+            s.pop_back();
+        else
+        {
+            int i = s.size() - 1;
+            while (i >= 0 && s[i] == '1')
+                --i;
+            if (i < 0)
+                s = "1" + string(s.size(), '0');
+            else
+                s[i] = '1', s = s.substr(0, i + 1) + string(s.size() - i - 1, '0');
         }
-        if(!done){input = '1' + input;}
-        return input;
+        ++cnt;
     }
-    return "ERROR";
-}
-
-
-int main(){
-
-    long counter(0);
-    std::string currentString("1");
-    getline(std::cin, currentString);
-    while(currentString != "1"){currentString = transform(currentString); ++counter;}
-    std::cout << counter << std::endl;
-
+    cout << cnt << endl;
     return 0;
 }
