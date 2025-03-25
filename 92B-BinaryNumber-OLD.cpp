@@ -1,3 +1,4 @@
+// Counts the steps to reduce a binary number to 1 using specific rules.
 // Time Complexity: O(n^2)
 // Space Complexity: O(n)
 #include <bits/stdc++.h>
