@@ -1,3 +1,5 @@
+// Time Complexity: O(n^2)
+// Space Complexity: O(n)
 #include <cstdio>
 #include <iostream>
 #include <string>
