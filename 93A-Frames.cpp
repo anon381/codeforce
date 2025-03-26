@@ -1,7 +1,8 @@
-#include <cstdio>
+#include <bits/stdc++.h>
+using namespace std;
 
-int main(){
-
+int main()
+{
     long n, m, a, b; scanf("%ld %ld %ld %ld\n", &n, &m, &a, &b);
     --a; --b; 
     int ans(0);
