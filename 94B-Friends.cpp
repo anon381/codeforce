@@ -1,3 +1,4 @@
+// Finds the maximum value in a list of friends' scores.
 // Time Complexity: O(n)
 // Space Complexity: O(n)
 #include <bits/stdc++.h>
