@@ -1,11 +1,12 @@
-#include <cstdio>
-#include <vector>
+#include <bits/stdc++.h>
+
+using namespace std;
 
 int main(){
 
     int n(0), m(0); scanf("%d %d\n", &n, &m);
-    std::vector<std::vector<char> > grid(n, std::vector<char>(m,'#'));
-    std::vector<std::vector<char> > mock(n, std::vector<char>(m,'#'));
+    vector<vector<char> > grid(n, vector<char>(m,'#'));
+    vector<vector<char> > mock(n, vector<char>(m,'#'));
 
     for(int row = 0; row < n; row++){for(int col = 0; col < m; col++){scanf("%c", &grid[row][col]);}scanf("\n");}
     for(int row = 0; row < n; row++){for(int col = 0; col < m; col++){mock[row][col] = grid[row][col];}}
