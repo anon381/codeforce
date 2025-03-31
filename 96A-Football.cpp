@@ -1,3 +1,4 @@
+// Checks if a football string contains seven or more consecutive identical characters.
 // Time Complexity: O(n)
 // Space Complexity: O(1)
 #include <bits/stdc++.h>
