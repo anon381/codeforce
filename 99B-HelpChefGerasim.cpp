@@ -46,9 +46,9 @@ int main(){
         }
     }
 
-    if(res == 0){std::cout << "Unrecoverable configuration." << std::endl;}
-    else if(res == 1){std::cout << "Exemplary pages." << std::endl;}
-    else if(res == 2){std::cout << diff << " ml. from cup #" << from << " to cup #" << to << "." << std::endl;}
+    if(res == 0){cout << "Unrecoverable configuration." << endl;}
+    else if(res == 1){cout << "Exemplary pages." << endl;}
+    else if(res == 2){cout << diff << " ml. from cup #" << from << " to cup #" << to << "." << endl;}
 
     return 0;
 }
