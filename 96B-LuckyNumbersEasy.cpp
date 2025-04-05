@@ -1,3 +1,4 @@
+// Time Complexity: O(log n)
 #include <cstdio>
 #include <cmath>
 #include <algorithm>
