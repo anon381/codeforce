@@ -32,7 +32,7 @@ int main(){
                 long long testNumber(0);
                 for(int k = 0; k < numDigits; k++){testNumber = 10 * testNumber + digits[k];}
                 if(testNumber >= n && testNumber < minSuperlucky){minSuperlucky = testNumber;}
-            }while(std::next_permutation(digits,digits + numDigits));
+            }while(next_permutation(digits,digits + numDigits));
 
             printf("%lld\n", minSuperlucky);
         }
