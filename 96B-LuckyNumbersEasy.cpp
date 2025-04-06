@@ -1,11 +1,9 @@
 // Time Complexity: O(log n)
 // Space Complexity: O(log n)
-#include <cstdio>
-#include <cmath>
-#include <algorithm>
+#include <bits/stdc++.h>
+using namespace std;
 
 int main(){
-
     long n(0); scanf("%ld\n", &n);
     int numDigits = 1 + log10(n);
 

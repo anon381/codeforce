@@ -1,16 +1,20 @@
 // Time Complexity: O(1)
 // Space Complexity: O(1)
-#include <iostream>
+#include <bits/stdc++.h>
+using namespace std;
 
 int main(){
-
-    std::string line; getline(std::cin, line);
+    string line; getline(cin, line);
     int separator = line.find('.');
-    std::string integerPart = line.substr(0,separator);
+    string integerPart = line.substr(0,separator);
     char firstDecimal = line[separator + 1];
 
-    if(integerPart[separator - 1] == '9'){integerPart = "GOTO Vasilisa.";}
-    else if(firstDecimal >= '5'){++integerPart[separator - 1];}
-    std::cout << integerPart << std::endl;
+    if(integerPart[separator - 1] == '9'){
+        integerPart = "GOTO Vasilisa.";
+    }
+    else if(firstDecimal >= '5'){
+        ++integerPart[separator - 1];
+    }
+    cout << integerPart << endl;
     return 0;
 }
