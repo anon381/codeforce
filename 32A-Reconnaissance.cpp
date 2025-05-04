@@ -1,3 +1,4 @@
+// Counts ordered pairs of soldiers whose heights differ by at most d, then doubles (directional).
 #include <bits/stdc++.h>
 
 using namespace std;

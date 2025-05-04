@@ -1,3 +1,4 @@
+// Orders evacuation: rats, women/children, men, then captain.
 #include <bits/stdc++.h>
 using namespace std;
 

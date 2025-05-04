@@ -1,3 +1,4 @@
+// Aggregates minimum viability per row and sums; caps result at k.
 #include <bits/stdc++.h>
 int main(){
     long n(0), m(0), k(0); scanf("%ld %ld %ld", &n, &m, &k);

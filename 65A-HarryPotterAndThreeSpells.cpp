@@ -1,3 +1,4 @@
+// Determines winner (Ron/Hermione) based on logical/spell power conditions.
 #include <bits/stdc++.h>
 int main(){
 

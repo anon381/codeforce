@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-
+// Computes total score for each student based on given criteria.
 int main(){
 
     int n; scanf("%d\n", &n);

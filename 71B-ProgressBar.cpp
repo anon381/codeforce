@@ -1,3 +1,4 @@
+// Outputs distribution of progress units: full k's then partial remainder then zeros.
 #include <bits/stdc++.h>
 int main(){
 

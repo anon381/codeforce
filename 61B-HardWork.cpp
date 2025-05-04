@@ -1,3 +1,4 @@
+// Normalizes three strings and checks if query permutation matches any concatenation ordering.
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,4 +1,3 @@
-// Computes travel time along road with a single traffic light considering red/green cycle waiting.
 #include <bits/stdc++.h>
 
 using namespace std;

@@ -1,3 +1,4 @@
+// Parses a compressed email-like string inserting commas after domain parts; validates format.
 #include <bits/stdc++.h>
 
 using namespace std;

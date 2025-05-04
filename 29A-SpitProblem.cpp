@@ -1,4 +1,3 @@
-// Normalizes spit events to (start, distance) and checks for a pair with identical landing meeting points.
 #include <bits/stdc++.h>
 
 using namespace std;

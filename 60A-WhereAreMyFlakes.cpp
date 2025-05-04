@@ -1,3 +1,4 @@
+// Narrows possible box interval based on directional hints; outputs count or -1.
 #include <bits/stdc++.h>
 using namespace std;
 

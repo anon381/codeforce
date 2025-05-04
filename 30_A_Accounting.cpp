@@ -1,3 +1,4 @@
+// Solves A * x^n = B for integer x (considering sign and parity constraints), or reports no solution.
 #include <bits/stdc++.h>
 
 using namespace std;

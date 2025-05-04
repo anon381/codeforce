@@ -1,3 +1,4 @@
+// Searches three numbers where one equals sum of the other two; outputs indices else -1.
 #include <bits/stdc++.h>
 
 using namespace std;

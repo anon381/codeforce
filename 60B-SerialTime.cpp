@@ -1,3 +1,4 @@
+// DFS flood-fill in 3D grid starting from (level0,x,y) counting reachable '.' cells.
 #include <bits/stdc++.h>
 using namespace std;
 

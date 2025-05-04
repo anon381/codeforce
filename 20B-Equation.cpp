@@ -1,5 +1,3 @@
-// Solves a quadratic (or linear / degenerate) equation ax^2 + bx + c = 0
-// Printing number of real roots followed by the roots (ascending) if any.
 #include <bits/stdc++.h>
 int main(){
 

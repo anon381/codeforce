@@ -1,4 +1,3 @@
-// Computes minimal total cost to orient edges on a ring consistently by choosing direction with lower sum.
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,3 +1,4 @@
+// Performs bitwise XOR of two equal-length binary strings, outputting the result string.
 #include <bits/stdc++.h>
 using namespace std;
 

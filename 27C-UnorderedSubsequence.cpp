@@ -1,4 +1,3 @@
-// Searches for indices forming a length-3 subsequence that is not monotonic; prints 0 if sequence is monotonic.
 #include <bits/stdc++.h>
 using namespace std;
 

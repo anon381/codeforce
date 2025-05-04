@@ -1,4 +1,3 @@
-// Reconstructs a path in a chain-like graph (stamps) by starting from an endpoint and walking unused edges.
 #include <bits/stdc++.h>
 
 using namespace std;

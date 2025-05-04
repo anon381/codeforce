@@ -1,3 +1,4 @@
+// Checks overlap constraints between girl and boy interval bounds per given inequality conditions.
 
 #include <bits/stdc++.h>
 int main(){

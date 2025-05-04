@@ -1,3 +1,4 @@
+// Decodes Borze code: . -> 0, -. -> 1, -- -> 2.
 #include <bits/stdc++.h>
 
 using namespace std;

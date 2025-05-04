@@ -1,4 +1,5 @@
 
+// Simulates rank increases per day until first settler reaches k; counts days.
 #include <bits/stdc++.h>
 
 int main(){

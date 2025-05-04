@@ -1,4 +1,3 @@
-// Finds the maximum length of a substring that appears at least twice in the input string (non-overlapping allowed).
 #include <bits/stdc++.h>
 using namespace std;
 

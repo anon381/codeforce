@@ -1,3 +1,4 @@
+// Computes 2*max_subarray_sum - total_sum for a sequence.
 #include <bits/stdc++.h>
 
 int main(){

@@ -1,4 +1,3 @@
-// Finds the second smallest distinct value in a sequence; prints NO if it doesn't exist.
 #include <bits/stdc++.h>
 int main(){
 

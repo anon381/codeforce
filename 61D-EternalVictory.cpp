@@ -1,3 +1,4 @@
+// On a weighted tree, computes total doubled edge sum minus farthest node distance (minimal traversal).
 #include <bits/stdc++.h>
 using namespace std;
 

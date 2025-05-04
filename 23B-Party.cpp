@@ -1,4 +1,3 @@
-// For each test: given n, prints max number of full groups of size >=2 after removing two people (n-2) if n>2 else 0.
 #include <bits/stdc++.h>
 
 int main(){

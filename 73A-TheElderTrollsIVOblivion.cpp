@@ -1,3 +1,4 @@
+// Distributes resource m across three dimensions to maximize (a+1)(b+1)(c+1) within bounds.
 #include <bits/stdc++.h>
 
 int main(){

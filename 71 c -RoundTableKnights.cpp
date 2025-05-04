@@ -1,3 +1,4 @@
+// Checks if any cycle sampling step forms a segment where all selected knights are '1' with length>=3.
 #include <bits/stdc++.h>
 
 int main(){
