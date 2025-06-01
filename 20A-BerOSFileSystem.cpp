@@ -1,3 +1,5 @@
+// Normalizes a given UNIX-like path by collapsing consecutive slashes
+// and removing a single trailing slash (except when path is just "/").
 #include <bits/stdc++.h>
 using namespace std;
 
