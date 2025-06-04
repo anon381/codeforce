@@ -1,3 +1,5 @@
+// Runs Dijkstra shortest path from node 1 to node n in an undirected weighted graph.
+// Prints one shortest path or -1 if target is unreachable.
 #include <bits/stdc++.h>
 using namespace std;
 
