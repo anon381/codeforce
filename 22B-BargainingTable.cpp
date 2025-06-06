@@ -1,3 +1,4 @@
+// Brute forces all-zero subrectangles in an n x m grid of '0'/'1' chars and returns max perimeter.
 #include <bits/stdc++.h>
 using namespace std;
 
