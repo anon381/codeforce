@@ -1,3 +1,5 @@
+// Constructs a graph with n nodes and m edges containing a star centered at v,
+// adding extra edges while avoiding exceeding simple graph limits; prints -1 if impossible.
 #include <bits/stdc++.h>
 typedef long long ll;
 
