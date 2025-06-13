@@ -1,3 +1,4 @@
+// Identifies the 1-based index of the unique parity (odd among evens or vice versa) in a list.
 #include <bits/stdc++.h>
 
 
