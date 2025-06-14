@@ -1,3 +1,4 @@
+// Formats a digit string into groups: leading 3 if odd length else 2, then groups of 2 separated by dashes.
 #include <bits/stdc++.h>
 using namespace std;
 
