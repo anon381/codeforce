@@ -1,3 +1,4 @@
+// Uses DSU to replace redundant edges with needed ones to connect all components (outputs operations).
 #include <bits/stdc++.h>
 using namespace std;
 
