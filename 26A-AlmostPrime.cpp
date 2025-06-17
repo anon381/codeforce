@@ -1,3 +1,4 @@
+// Counts numbers in [1..n] with exactly two distinct prime divisors (almost primes).
 #include <bits/stdc++.h>
 using namespace std;
 
