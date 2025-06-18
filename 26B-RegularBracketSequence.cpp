@@ -1,3 +1,4 @@
+// Calculates length of the longest correct parentheses subsequence by matching pairs greedily.
 #include <bits/stdc++.h>
 using namespace std;
 
