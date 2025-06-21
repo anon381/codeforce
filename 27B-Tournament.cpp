@@ -1,3 +1,4 @@
+// Determines the missing match result in a nearly complete round-robin tournament by consistency checks.
 #include <bits/stdc++.h>
 using namespace std;
 
