@@ -1,3 +1,4 @@
+// Reconstructs the smallest number with a given prime factorization pattern of (n) by distributing exponents over primes.
 #include <bits/stdc++.h>
 using namespace std;
 
