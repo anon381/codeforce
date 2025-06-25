@@ -1,3 +1,4 @@
+// Builds graph of swappable positions and checks if each position and its target belong to same component.
 #include <bits/stdc++.h>
 
 using namespace std;
