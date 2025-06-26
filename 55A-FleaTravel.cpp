@@ -1,10 +1,10 @@
-#include <cstdio>
-#include <vector>
+#include <bits/stdc++.h>
+using namespace std;
 
 int main(){
 
     int n; scanf("%d\n", &n);
-    std::vector<int> present(n, 0); present[0] = 1;
+    vector<int> present(n, 0); present[0] = 1;
 
     int pos(0);
     for(int p = 1; p <= 2 * n; p++){pos += p; pos %= n; present[pos] = 1;}
