@@ -1,3 +1,4 @@
+// Finds two adjacent soldiers (circularly) with minimal height difference and prints their 1-based indices.
 #include <cstdio>
 #include <cstdlib>
 
