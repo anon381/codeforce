@@ -1,4 +1,6 @@
-LeetCode Solutions (Python)
+# Codeforce Solutions (C++)
+---
+
 This repository contains my Python solutions to Codeforce problems.
 I'm committing them here as I practice and track my problem-solving progress.
 
