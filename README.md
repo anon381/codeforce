@@ -1,4 +1,4 @@
-# Codeforce Solutions (C++)
+# Codeforce-Solutions (C++)
 ---
 
 This repository contains my Python solutions to Codeforce problems.
