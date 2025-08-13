@@ -1,8 +1,4 @@
-#include <iostream>
-#include <map>
-#include <vector>
-#include <algorithm>
-
+#include <bits/stdc++.h>
 struct str{std::string name; long pr;};
 bool comp(str a, str b){
     if(a.pr > b.pr){return true;}
