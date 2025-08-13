@@ -1,8 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include <cstdint>
-
+#include <bits/stdc++.h>
 using namespace std;
 
 #define all(a) (a).begin(), (a).end()
