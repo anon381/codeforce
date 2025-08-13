@@ -1,7 +1,4 @@
-#include <cstdio>
-#include <vector>
-#include <algorithm>
-
+#include <bits/stdc++.h>
 long gcd(long a, long b){return (b == 0) ? a : gcd (b, a%b);}
 
 int main(){
