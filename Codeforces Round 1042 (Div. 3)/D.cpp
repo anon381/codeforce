@@ -1,8 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <numeric>
-#include <algorithm>
-#include <functional>
+#include <bits/stdc++.h>
 
 #define all(a) (a).begin(), (a).end()
 #define endl "\n"
