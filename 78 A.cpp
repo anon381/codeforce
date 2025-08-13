@@ -1,8 +1,5 @@
-#include <cstdio>
-#include <iostream>
-
+#include <bits/stdc++.h>
 int main(){
-
     std::string currentLine;
     bool output(1); size_t numVowels(0);
 
