@@ -1,7 +1,4 @@
-#include <iostream>
-#include <vector>
-
-
+#include <bits/stdc++.h>
 void dfs(int h, int row, int col, std::vector<std::vector<std::vector<bool> > > &g, int &count){
 
     if(h < 0 || h >= g.size() || row < 0 || row >= g[0].size() || col < 0 || col >= g[0][0].size()){return;}
