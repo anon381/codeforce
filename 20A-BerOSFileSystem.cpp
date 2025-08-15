@@ -1,6 +1,4 @@
-
-#include <iostream>
-
+#include <bits/stdc++.h>
 int main(){
 
     std::string path; getline(std::cin, path);
