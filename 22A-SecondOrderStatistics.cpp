@@ -1,6 +1,4 @@
-
-#include <cstdio>
-
+#include <bits/stdc++.h>
 int main(){
 
     int temp(0), currentMin(101), secondMin(101);
