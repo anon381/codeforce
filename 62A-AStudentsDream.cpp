@@ -1,7 +1,5 @@
 
 #include <bits/stdc++.h>
-
-
 int main(){
 
     int girlLeft(0), girlRight(0); scanf("%d %d", &girlLeft, &girlRight);
