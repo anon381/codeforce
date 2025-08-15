@@ -1,8 +1,6 @@
 
 #include <bits/stdc++.h>
 
-
-
 void dfs(int64_t node, const std::vector<std::vector<std::pair<int64_t, int64_t> > > &g, std::vector<bool> &visited, std::vector<int64_t> &distance){
 
     if(visited[node]){return;}
