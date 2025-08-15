@@ -1,7 +1,4 @@
-
 #include <bits/stdc++.h>
-
-
 std::string convert(std::string s){
     std::string output("");
     for(int p = 0; p < s.size(); p++){
