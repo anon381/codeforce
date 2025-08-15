@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-#include <cstdio>
 int main(){
 
     long a,b,c,d,e,f; scanf("%ld %ld %ld %ld %ld %ld", &a, &b, &c, &d, &e, &f);
