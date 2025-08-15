@@ -1,8 +1,4 @@
-
-#include <cstdio>
-#include <iostream>
-#include <set>
-
+#include <bits/stdc++.h>
 int main(){
 
     std::string input; getline(std::cin, input);
