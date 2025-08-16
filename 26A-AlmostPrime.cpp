@@ -1,8 +1,4 @@
-
-#include <cstdio>
-#include <iostream>
-#include <cmath>
-#include <vector>
+#include <bits/stdc++.h>
 
 int main(){
 
