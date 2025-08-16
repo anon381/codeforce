@@ -1,6 +1,5 @@
+#include <bits/stdc++.h>
 
-#include <cstdio>
-#include <set>
 
 int main(){
 
