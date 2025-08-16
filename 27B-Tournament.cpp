@@ -1,7 +1,5 @@
+#include <bits/stdc++.h>
 
-#include <cstdio>
-#include <vector>
-#include <set>
 
 int main(){
 
