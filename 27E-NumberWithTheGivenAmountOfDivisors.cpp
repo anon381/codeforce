@@ -1,6 +1,5 @@
+#include <bits/stdc++.h>
 
-#include <cstdio>
-#include <vector>
 typedef long long ll;
 
 int main(){
