@@ -1,6 +1,5 @@
+#include <bits/stdc++.h>
 
-#include <cstdio>
-#include <vector>
 
 long find(long x, std::vector<long> &v){return (v[x] == x) ? x : (v[x] = find(v[x], v));}
 
