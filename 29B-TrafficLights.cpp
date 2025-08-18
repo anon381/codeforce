@@ -1,4 +1,5 @@
-#include <cstdio>
+#include <bits/stdc++.h>
+
 using namespace std;
 int main() {
     long l, d, v, g, r; 
