@@ -1,5 +1,5 @@
-#include <cstdio>
-#include <vector>
+#include <bits/stdc++.h>
+
 using namespace std;
 void dfs(long node, const vector<vector<long>> &g, vector<bool> &visited, vector<long> &group, long root) {
 
