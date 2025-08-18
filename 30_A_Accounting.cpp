@@ -1,14 +1,10 @@
 #include <cstdio>
 #include <cmath>
 using namespace std;
-
 int main() {
-
     long A(0), B(0), n(0); scanf("%ld %ld %ld", &A, &B, &n);
-
     bool possible(1);
     int X(0);
-
     if(A == 0 && B == 0) {
         puts("1");
     }
@@ -27,14 +23,12 @@ int main() {
     else {
         int outputSign = 2 * (A * B > 0) - 1; 
         int sol = outputSign * pow(1.0 * outputSign * B / A, 1.0 / n);
-
         int lhs(A), lhsP(A), lhsN(A);
         for(int k = 0; k < n; k++) {
             lhs *= sol; 
             lhsP *= (sol + 1); 
             lhsN *= (sol - 1);
         }
-
         if(lhs == B) {
             printf("%d\n", sol);
         }
