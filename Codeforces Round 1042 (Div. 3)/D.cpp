@@ -1,25 +1,26 @@
 #include <bits/stdc++.h>
+using namespace std;
 
 #define all(a) (a).begin(), (a).end()
 #define endl "\n"
-#define vec std::vector
-#define pii std::pair<int, int>
+#define vec vector
+#define pii pair<int, int>
 #define se second
 #define fi first
 #define pb push_back
-#define maxel(v) *std::max_element((v).begin(), (v).end())
-#define minel(v) *std::min_element((v).begin(), (v).end())
+#define maxel(v) *max_element((v).begin(), (v).end())
+#define minel(v) *min_element((v).begin(), (v).end())
 
 typedef long long ll;
 
 void solve() {
     int n;
-    std::cin >> n;
+    cin >> n;
     vec<vec<int>> adj(n + 1);
     vec<int> deg(n + 1, 0);
     for (int i = 0; i < n - 1; ++i) {
         int u, v;
-        std::cin >> u >> v;
+        cin >> u >> v;
         adj[u].pb(v);
         adj[v].pb(u);
         deg[u]++;
@@ -34,7 +35,7 @@ void solve() {
         }
     }
     if (is_star) {
-        std::cout << 0 << endl;
+        cout << 0 << endl;
         return;
     }
 
@@ -42,7 +43,7 @@ void solve() {
     vec<int> leaves_down(n + 1);
     vec<ll> ops_down(n + 1, 0);
 
-    std::function<void(int, int)> dfs1 = 
+    function<void(int, int)> dfs1 = 
         [&](int u, int p) {
         sz[u] = 1;
         leaves_down[u] = (deg[u] == 1);
@@ -77,14 +78,14 @@ void solve() {
         }
     }
 
-    std::cout << min_ops << endl;
+    cout << min_ops << endl;
 }
 
 int main() {
-    std::ios_base::sync_with_stdio(false);
-    std::cin.tie(NULL);
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
     int t;
-    std::cin >> t;
+    cin >> t;
     while (t--) {
         solve();
     }
