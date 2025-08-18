@@ -1,5 +1,5 @@
-#include <cstdio>
-#include <cmath>
+#include <bits/stdc++.h>
+
 using namespace std;
 int main() {
     long A(0), B(0), n(0); scanf("%ld %ld %ld", &A, &B, &n);
