@@ -1,24 +1,25 @@
 #include <bits/stdc++.h>
-
+using namespace std;
 
 #define all(a) (a).begin(), (a).end()
 #define endl "\n"
-#define vec std::vector
-#define pii std::pair<int, int>
+#define vec vector
+#define pii pair<int, int>
 #define se second
 #define fi first
 #define pb push_back
 #define maxel(v) *max_element(v.begin(), v.end())
 #define minel(v) *min_element(v.begin(), v.end())
-#define yes std::cout << "YES\n";
-#define m1 std::cout << "-1\n";
-#define no std::cout << "NO\n";
+#define yes cout << "YES\n";
+#define m1 cout << "-1\n";
+#define no cout << "NO\n";
+
 typedef long long ll;
 typedef unsigned long long ull;
 typedef long double ld;
 const ll mod = 1e9 + 7;
 
-std::map<ll, ll> memo_H;
+map<ll, ll> memo_H;
 
 ll power(ll base, ll exp) {
     ll res = 1;
@@ -55,11 +56,11 @@ ll get_H(ll g) {
 void solve() {
     int n;
     ll k;
-    std::cin >> n >> k;
-    std::set<ll> s;
+    cin >> n >> k;
+    set<ll> s;
     for (int i = 0; i < n; ++i) {
         ll val;
-        std::cin >> val;
+        cin >> val;
         s.insert(val);
     }
 
@@ -109,14 +110,14 @@ void solve() {
         }
     }
 
-    std::cout << ans << endl;
+    cout << ans << endl;
 }
 
 int main() {
-    std::ios_base::sync_with_stdio(false);
-    std::cin.tie(NULL);
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
     int t;
-    std::cin >> t;
+    cin >> t;
     while (t--) {
         solve();
     }
