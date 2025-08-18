@@ -1,7 +1,6 @@
 #include <cstdio>
 #include <vector>
 using namespace std;
-
 void dfs(long node, const vector<vector<long>> &g, vector<bool> &visited, vector<long> &group, long root) {
 
     if(visited[node]) { return; }
@@ -14,29 +13,21 @@ void dfs(long node, const vector<vector<long>> &g, vector<bool> &visited, vector
         dfs(u, g, visited, group, root);
     }
 }
-
-
 int main() {
-
     long n; scanf("%ld", &n);
-
     vector<long> target(n + 1);
     for(long p = 1; p <= n; p++) { scanf("%ld", &target[p]); }
-
     vector<vector<long>> g(n + 1);
     for(long p = 1; p <= n; p++) {
         long d; scanf("%ld", &d);
         long u = p - d; if((u > 0) && (u <= n)) { g[p].push_back(u); g[u].push_back(p); }
         long v = p + d; if((v > 0) && (v <= n)) { g[p].push_back(v); g[v].push_back(p); }
     }
-
     vector<bool> mark(n + 1, 0);
     vector<long> group(n + 1, 0);
     for(long p = 1; p <= n; p++) { if(mark[p]) { continue; } dfs(p, g, mark, group, p); }
-
     bool possible = true;
     for(long p = 1; p <= n; p++) { if(group[p] != group[target[p]]) { possible = false; break; } }
     puts(possible ? "YES" : "NO");
-
     return 0;
 }
