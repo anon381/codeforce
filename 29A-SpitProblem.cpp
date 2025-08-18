@@ -1,7 +1,5 @@
-#include <cstdio>
-#include <cstdlib>
-#include <vector>
-#include <algorithm>
+#include <bits/stdc++.h>
+
 using namespace std;
 int main() {
     long n(0); 
