@@ -1,5 +1,5 @@
-#include <cstdio>
-#include <algorithm>
+#include <bits/stdc++.h>
+
 using namespace std;
 int main() {
     long n(0), d(0); scanf("%ld %ld", &n, &d);
