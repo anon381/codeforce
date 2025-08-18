@@ -1,4 +1,4 @@
-#include <cstdio>
+#include <bits/stdc++.h>
 int main(){
     long n(0), m(0), k(0); scanf("%ld %ld %ld", &n, &m, &k);
     long *viability = new long[m + 1];
