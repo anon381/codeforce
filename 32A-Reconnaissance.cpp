@@ -1,12 +1,13 @@
 #include <cstdio>
 #include <algorithm>
+using namespace std;
 
-int main(){
+int main() {
 
     long n(0), d(0); scanf("%ld %ld", &n, &d);
     long * height = new long[n];
     for(int k = 0; k < n; k++){scanf("%ld", height + k);}
-    std::sort(height, height + n);
+    sort(height, height + n);
 
     long total(0);
     for(int k = 0; k < n; k++){
