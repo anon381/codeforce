@@ -1,11 +1,9 @@
 #include <cstdio>
 #include <iostream>
 using namespace std;
-
 int main() {
     string input; 
     getline(cin, input);
-
     size_t index = 0;
     while (index < input.size()) {
         if (input[index] == '.') {
