@@ -1,8 +1,5 @@
-#include <cstdio>
-#include <iostream>
-#include <vector>
-#include <map>
-#include <set>
+#include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
