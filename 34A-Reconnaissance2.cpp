@@ -1,6 +1,5 @@
 // Finds adjacent pair (circular) with minimal height difference; prints their indices.
-#include <cstdio>
-#include <cstdlib>
+#include <bits/stdc++.h>
 
 int main(){
 
