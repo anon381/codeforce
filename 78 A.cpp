@@ -1,32 +1,30 @@
 #include <bits/stdc++.h>
-int main(){
-    std::string currentLine;
-    bool output(1); size_t numVowels(0);
+using namespace std;
 
-    numVowels = 0; getline(std::cin, currentLine);
-    for(size_t index = 0; index < currentLine.size(); index++){
-        char currentLetter = tolower(currentLine[index]);
-        if(currentLetter == 'a' || currentLetter == 'e' || currentLetter == 'u' || currentLetter == 'i' || currentLetter =='o'){++numVowels;}
+int countVowels(const string &line) {
+    int cnt = 0;
+    for (char ch : line) {
+        char c = tolower(ch);
+        if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
+            ++cnt;
+        }
     }
-    if(numVowels != 5){output = 0;}
+    return cnt;
+}
 
-    numVowels = 0; getline(std::cin, currentLine);
-    for(size_t index = 0; index < currentLine.size(); index++){
-        char currentLetter = tolower(currentLine[index]);
-        if(currentLetter == 'a' || currentLetter == 'e' || currentLetter == 'u' || currentLetter == 'i' || currentLetter =='o'){++numVowels;}
-    }
-    if(numVowels != 7){output = 0;}
+int main() {
+    string currentLine;
+    bool output = true;
 
-    numVowels = 0; getline(std::cin, currentLine);
-    for(size_t index = 0; index < currentLine.size(); index++){
-        char currentLetter = tolower(currentLine[index]);
-        if(currentLetter == 'a' || currentLetter == 'e' || currentLetter == 'u' || currentLetter == 'i' || currentLetter =='o'){++numVowels;}
-    }
-    if(numVowels != 5){output = 0;}
+    getline(cin, currentLine);
+    if (countVowels(currentLine) != 5) output = false;
 
-    if(output){puts("YES");}
-    else{puts("NO");}
+    getline(cin, currentLine);
+    if (countVowels(currentLine) != 7) output = false;
 
+    getline(cin, currentLine);
+    if (countVowels(currentLine) != 5) output = false;
 
+    puts(output ? "YES" : "NO");
     return 0;
 }
