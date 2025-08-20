@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+// Computes total score for each student based on given criteria.
 
 int main() {
     int n; 
