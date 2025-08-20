@@ -1,7 +1,4 @@
-
-#include <iostream>
-#include <vector>
-
+#include <bits/stdc++.h>
 std::vector<int> parseString(std::string s){
 
     int x(0);
