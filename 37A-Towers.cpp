@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
@@ -28,6 +29,6 @@ int main() {
 
     printf("%d %d\n", maxHeight, numTowers);
 
-    delete[] length;
+    delete[] length; // free allocated memory
     return 0;
 }
