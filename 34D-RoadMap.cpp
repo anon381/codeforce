@@ -1,5 +1,4 @@
-#include <cstdio>
-#include <vector>
+#include <bits/stdc++.h>
 
 void dfs(long node, const std::vector<std::vector<long> > &g, std::vector<long> &from, std::vector<bool> &vis){
 
