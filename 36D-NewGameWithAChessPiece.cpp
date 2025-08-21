@@ -1,6 +1,4 @@
-#include <iostream>
-#include <fstream>
-#include <sstream>
+#include <bits/stdc++.h>
 
 bool firstWins(long n, long m, long k){
 
