@@ -1,6 +1,5 @@
 
-#include <cstdio>
-#include <algorithm>
+#include <bits/stdc++.h>
 
 int main(){
     int N; scanf("%d", &N);
