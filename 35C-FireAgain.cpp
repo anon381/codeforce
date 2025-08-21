@@ -1,5 +1,4 @@
-#include <cstdio>
-#include <vector>
+#include <bits/stdc++.h>
 
 int mabs(int x){return (x > 0) ? x : (-x);}
 
