@@ -61,3 +61,58 @@ int main() {
 
     return 0;
 }
+// or in python id needed
+/*
+import heapq
+
+def dijkstra(n, edges):
+    # Build graph
+    g = [[] for _ in range(n + 1)]
+    for u, v, w in edges:
+        g[u].append((v, w))
+        g[v].append((u, w))
+
+    source, target = 1, n
+    dist = [-1] * (n + 1)
+    from_node = [-1] * (n + 1)
+    from_node[0] = 0
+    from_node[1] = 1
+    visited = [False] * (n + 1)
+
+    # Priority queue: (distance, vertex)
+    pq = []
+    heapq.heappush(pq, (0, source))
+
+    while pq:
+        distance, vertex = heapq.heappop(pq)
+        if visited[vertex]:
+            continue
+        visited[vertex] = True
+
+        for u, w in g[vertex]:
+            if visited[u]:
+                continue
+            if dist[u] < 0 or dist[u] > distance + w:
+                dist[u] = distance + w
+                heapq.heappush(pq, (dist[u], u))
+                from_node[u] = vertex
+
+    if dist[target] < 0:
+        print(-1)
+    else:
+        path = []
+        cur = target
+        while cur != from_node[cur]:
+            path.append(cur)
+            cur = from_node[cur]
+        path.append(cur)
+        print(*reversed(path))
+
+
+# Example usage:
+n, m = map(int, input().split())
+edges = [tuple(map(int, input().split())) for _ in range(m)]
+dijkstra(n, edges)
+
+
+*/
