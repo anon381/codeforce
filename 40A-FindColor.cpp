@@ -1,6 +1,4 @@
-#include <cstdio>
-#include <cmath>
-
+#include <bits/stdc++.h>
 int main(){
     
     long x, y; scanf("%ld %ld\n", &x, &y);
