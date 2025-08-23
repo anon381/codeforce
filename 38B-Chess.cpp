@@ -1,19 +1,19 @@
 #include <iostream>
 #include <vector>
+using namespace std;
 
-int main(){
+int main() {
 
     const int n = 8;
-    std::vector<std::vector<bool> > array(n, std::vector<bool>(n, 1));
+    vector<vector<bool>> array(n, vector<bool>(n, 1));
 
-    std::string pos1; getline(std::cin, pos1);
-    std::string pos2; getline(std::cin, pos2);
+    string pos1; getline(cin, pos1);
+    string pos2; getline(cin, pos2);
 
     int rookRow = pos1[1] - '1';
     int rookCol = pos1[0] - 'a';
     for(int row = 0; row < n; row++){array[row][rookCol] = 0;}
     for(int col = 0; col < n; col++){array[rookRow][col] = 0;}
-
 
     int knightRow = pos2[1] - '1';
     int knightCol = pos2[0] - 'a';
@@ -46,14 +46,16 @@ int main(){
 
             posRow = rookRow - row; posCol = rookCol - col;
             if(posRow >= 0 && posCol >= 0){array[posRow][posCol] = 0;}
-
         }
     }
 
-
     int total(0);
-    for(int row = 0; row < n; row++){for(int col = 0; col < n; col++){total += array[row][col];}}
-    std::cout << total << std::endl;
+    for(int row = 0; row < n; row++){
+        for(int col = 0; col < n; col++){
+            total += array[row][col];
+        }
+    }
+    cout << total << endl;
 
     return 0;
 }
