@@ -1,6 +1,5 @@
-#include <cstdio>
-#include <vector>
-#include <map>
+#include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
