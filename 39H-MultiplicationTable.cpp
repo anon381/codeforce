@@ -1,5 +1,4 @@
-#include <cstdio>
-
+#include <bits/stdc++.h>
 int main(){
 
     int k; scanf("%d", &k);
