@@ -1,5 +1,4 @@
-#include <cstdio>
-
+#include <bits/stdc++.h>
 int main(){
     int n; scanf("%d",&n);
     int *years = new int[n + 1];
