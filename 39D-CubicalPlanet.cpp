@@ -1,5 +1,4 @@
-#include <cstdio>
-
+#include <bits/stdc++.h>
 int main(){
 
     int x1, y1, z1, x2, y2, z2; scanf("%d %d %d %d %d %d", &x1, &y1, &z1, &x2, &y2, &z2);
