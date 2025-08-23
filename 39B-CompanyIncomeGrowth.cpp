@@ -1,11 +1,12 @@
-
 #include <cstdio>
 #include <vector>
+using namespace std;
 
-int main(){
+int main() {
 
     const long S = 2001;
-    long cur(1); std::vector<long> v;
+    long cur(1); 
+    vector<long> v;
     long n; scanf("%ld", &n);
     for(long p = 0; p < n; p++){
         long x; scanf("%ld", &x);
