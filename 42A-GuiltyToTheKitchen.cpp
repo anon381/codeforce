@@ -1,24 +1,31 @@
 #include <bits/stdc++.h>
+using namespace std;
 
-int main(){
+int main() {
 
-    long n, V; scanf("%ld %ld\n", &n, &V);
+    long n, V; 
+    scanf("%ld %ld\n", &n, &V);
 
-    std::vector<double> a(n, 0);
-    std::vector<double> b(n, 0);
+    vector<double> a(n, 0);
+    vector<double> b(n, 0);
     double propSum(0);
-    for(long p = 0; p < n; p++){
+
+    for (long p = 0; p < n; p++) {
         scanf("%lf", &a[p]);
         propSum += a[p];
     }
 
-    for(long p = 0; p < n; p++){scanf("%lf", &b[p]);}
+    for (long p = 0; p < n; p++) {
+        scanf("%lf", &b[p]);
+    }
 
     double x = V / propSum;
 
-    for(long p = 0; p < n; p++){
+    for (long p = 0; p < n; p++) {
         double ratio = b[p] / a[p];
-        if(ratio < x){x = ratio;}
+        if (ratio < x) {
+            x = ratio;
+        }
     }
 
     printf("%.5lf\n", propSum * x);
