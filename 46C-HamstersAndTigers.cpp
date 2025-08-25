@@ -1,17 +1,24 @@
 #include <bits/stdc++.h>
+using namespace std;
 
-int main(){
-
-    long n; std::cin >> n;
-    std::string s; std::cin >> s;
+int main() {
+    long n; 
+    cin >> n;
+    string s; 
+    cin >> s;
 
     long m(0);
-    for(long p = 0; p < n; p++){m += (s[p] == 'H');}
+    for (long p = 0; p < n; p++) {
+        m += (s[p] == 'H');
+    }
+
     long minCount(n + 1);
-    for(long start = 0; start < n; start++){
+    for (long start = 0; start < n; start++) {
         long cnt(0);
-        for(long p = 0; p < m; p++){cnt += (s[(start + p) % n] == 'T');}
-        minCount = (minCount < cnt) ? minCount : cnt;
+        for (long p = 0; p < m; p++) {
+            cnt += (s[(start + p) % n] == 'T');
+        }
+        minCount = min(minCount, cnt);
     }
 
     printf("%ld\n", minCount);
