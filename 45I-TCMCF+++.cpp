@@ -1,6 +1,4 @@
-#include <cstdio>
-#include <vector>
-#include <algorithm>
+#include <bits/stdc++.h>
 
 int main(){
 
