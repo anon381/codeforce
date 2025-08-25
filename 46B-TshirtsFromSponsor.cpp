@@ -1,37 +1,50 @@
 #include <bits/stdc++.h>
+using namespace std;
 
-int main(){
-
+int main() {
     const int N = 5;
-    std::map<std::string, int> rem;
-    std::map<std::string, std::vector<std::string> > pref;
+    map<string, int> rem;
+    map<string, vector<string>> pref;
 
-    std::vector<std::string> temp;
-    temp.clear(); temp.push_back("S"); temp.push_back("M"); temp.push_back("L"); temp.push_back("XL"); temp.push_back("XXL"); 
-    pref.insert(std::pair<std::string, std::vector<std::string> >("S", temp));
-    temp.clear(); temp.push_back("M"); temp.push_back("L"); temp.push_back("S"); temp.push_back("XL"); temp.push_back("XXL"); 
-    pref.insert(std::pair<std::string, std::vector<std::string> >("M", temp));
-    temp.clear(); temp.push_back("L"); temp.push_back("XL"); temp.push_back("M"); temp.push_back("XXL"); temp.push_back("S"); 
-    pref.insert(std::pair<std::string, std::vector<std::string> >("L", temp));
-    temp.clear(); temp.push_back("XL"); temp.push_back("XXL"); temp.push_back("L"); temp.push_back("M"); temp.push_back("S"); 
-    pref.insert(std::pair<std::string, std::vector<std::string> >("XL", temp));
-    temp.clear(); temp.push_back("XXL"); temp.push_back("XL"); temp.push_back("L"); temp.push_back("M"); temp.push_back("S"); 
-    pref.insert(std::pair<std::string, std::vector<std::string> >("XXL", temp));
+    vector<string> temp;
 
+    temp = {"S", "M", "L", "XL", "XXL"};
+    pref["S"] = temp;
 
-    int t; 
-    scanf("%d", &t); rem.insert(std::pair<std::string, int>("S", t));
-    scanf("%d", &t); rem.insert(std::pair<std::string, int>("M", t));
-    scanf("%d", &t); rem.insert(std::pair<std::string, int>("L", t));
-    scanf("%d", &t); rem.insert(std::pair<std::string, int>("XL", t));
-    scanf("%d", &t); rem.insert(std::pair<std::string, int>("XXL", t));
+    temp = {"M", "L", "S", "XL", "XXL"};
+    pref["M"] = temp;
 
-    int n; scanf("%d", &n);
-    for(int p = 0; p < n; p++){
-        std::string s; std::cin >> s;
-        for(int q = 0; q < N; q++){std::string cp = pref[s][q]; if(rem[cp] > 0){std::cout << cp << std::endl; --rem[cp]; break;}}
+    temp = {"L", "XL", "M", "XXL", "S"};
+    pref["L"] = temp;
+
+    temp = {"XL", "XXL", "L", "M", "S"};
+    pref["XL"] = temp;
+
+    temp = {"XXL", "XL", "L", "M", "S"};
+    pref["XXL"] = temp;
+
+    int t;
+    scanf("%d", &t); rem["S"] = t;
+    scanf("%d", &t); rem["M"] = t;
+    scanf("%d", &t); rem["L"] = t;
+    scanf("%d", &t); rem["XL"] = t;
+    scanf("%d", &t); rem["XXL"] = t;
+
+    int n; 
+    scanf("%d", &n);
+
+    for (int p = 0; p < n; p++) {
+        string s; 
+        cin >> s;
+        for (int q = 0; q < N; q++) {
+            string cp = pref[s][q];
+            if (rem[cp] > 0) {
+                cout << cp << endl;
+                --rem[cp];
+                break;
+            }
+        }
     }
-
 
     return 0;
 }
