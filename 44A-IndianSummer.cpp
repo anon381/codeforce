@@ -1,7 +1,5 @@
-#include <cstdio>
-#include <iostream>
-#include <string>
-#include <set>
+#include <bits/stdc++.h>
+
 
 int main(){
 
