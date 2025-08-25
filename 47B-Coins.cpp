@@ -1,6 +1,4 @@
-#include <cstdio>
-#include <iostream>
-#include <map>
+#include <bits/stdc++.h>
 
 int main(){
 
