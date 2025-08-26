@@ -1,4 +1,5 @@
-#include <cstdio>
+#include <bits/stdc++.h>
+using namespace std;
 
 bool check(long a, long b, long r){
     while(a > 0){if(a % 10 >= r){return false;}; a /= 10;}
