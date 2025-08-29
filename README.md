@@ -9,7 +9,7 @@ Collection of C++ solutions to Codeforces problems. Used for daily practice and 
 
 ## 🏅 Codeforces Profile
 <p align="center">
-<img src="https://codeforces-readme-stats.vercel.app/api/card?username=anonized&theme=github_dark&title_color=FFFFF0&icon_color=1E90FF&text_color=FFFFF0&bg_color=0D1117" height="200" alt="Codeforces Stats"/>
+<img src="https://codeforces-readme-stats.vercel.app/api/card?username=anonized&theme=github_dark&title_color=FFFFF0&icon_color=1E90FF&text_color=FFFFF0&bg_color=0D1117" height="400" alt="Codeforces Stats"/>
 </p>
 ## 📁 Repository Layout
 Each source file is named with the pattern:
