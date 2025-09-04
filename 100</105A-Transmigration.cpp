@@ -1,35 +1,50 @@
-#include <cstdio>
 #include <iostream>
 #include <vector>
 #include <map>
 #include <algorithm>
 
-int main(){
+using namespace std;
 
-    const int minLevel(100);
+int main() {
+    const int minLevel = 100;
     const double eps = 0.001;
 
-    int n, m; double k; std::cin >> n >> m >> k;
+    int n, m;
+    double k;
+    cin >> n >> m >> k;
 
-    std::map<std::string, int> skillMap;
-    for(int p = 0; p < n; p++){
-        std::string currentSkill; int currentLevel;
-        std::cin >> currentSkill >> currentLevel;
-        if(k * currentLevel >= minLevel){skillMap.insert(std::pair<std::string, long>(currentSkill, eps + k * currentLevel));}
-    }
-    for(int p = 0; p < m; p++){
-        std::string currentSkill; std::cin >> currentSkill;
-        if(skillMap.find(currentSkill) == skillMap.end()){skillMap.insert(std::pair<std::string, long>(currentSkill, 0));}
+    map<string, int> skillMap;
+
+    for (int p = 0; p < n; p++) {
+        string currentSkill;
+        int currentLevel;
+        cin >> currentSkill >> currentLevel;
+
+        if (k * currentLevel >= minLevel) {
+            skillMap.insert({currentSkill, static_cast<int>(eps + k * currentLevel)});
+        }
     }
 
-    std::vector<std::string> skillVec;
-    std::map<std::string, int>::iterator mapIter;
-    for(mapIter = skillMap.begin(); mapIter != skillMap.end(); mapIter++){skillVec.push_back(mapIter -> first);}
+    for (int p = 0; p < m; p++) {
+        string currentSkill;
+        cin >> currentSkill;
+
+        if (skillMap.find(currentSkill) == skillMap.end()) {
+            skillMap.insert({currentSkill, 0});
+        }
+    }
+
+    vector<string> skillVec;
+    for (auto& pair : skillMap) {
+        skillVec.push_back(pair.first);
+    }
+
     sort(skillVec.begin(), skillVec.end());
 
-    std::cout << skillVec.size() << std::endl;
-    for(int p = 0; p < skillVec.size(); p++){std::cout << skillVec[p] << " " << skillMap[skillVec[p]] << std::endl;}
-
+    cout << skillVec.size() << endl;
+    for (auto& skill : skillVec) {
+        cout << skill << " " << skillMap[skill] << endl;
+    }
 
     return 0;
 }
