@@ -1,3 +1,7 @@
+
+// Time Complexity     and 	Space Complexity
+// 	O(1)	O(1)
+    
 #include <bits/stdc++.h>
 using namespace std;
 
