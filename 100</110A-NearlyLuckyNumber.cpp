@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-using namespace sts;
+using namespace std;
 
 int main() {
     string number; 
