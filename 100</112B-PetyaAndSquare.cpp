@@ -1,10 +1,15 @@
-#include <cstdio>
+#include <bits/stdc++.h>
+using namespace std;
 
-int main(){
-    
-    int N(0), x(0), y(0); scanf("%d %d %d", &N, &x, &y);
-    int n = N/2;
-    if((x == n || x == n + 1) && (y == n || y == n + 1)){puts("NO");}
-    else{puts("YES");}
+int main() {
+    int N, x, y;
+    cin >> N >> x >> y;
+
+    int n = N / 2;
+    if ((x == n || x == n + 1) && (y == n || y == n + 1))
+        cout << "NO\n";
+    else
+        cout << "YES\n";
+
     return 0;
 }
