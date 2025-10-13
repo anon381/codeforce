@@ -1,14 +1,19 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
-int main(){
-    string first;  getline(cin, first);
-    string second; getline(cin, second);
+int main() {
+    string first, second;
+    getline(cin, first);
+    getline(cin, second);
+
     int comparison = 0;
-    for(int k = 0; k < first.size() ; ++k){
-        if(tolower(first[k]) < tolower(second[k])){comparison = -1;break;}
-        if(tolower(first[k]) > tolower(second[k])){comparison =  1;break;}
+    for (int k = 0; k < first.size(); ++k) {
+        char a = tolower(first[k]);
+        char b = tolower(second[k]);
+        if (a < b) { comparison = -1; break; }
+        if (a > b) { comparison = 1; break; }
     }
-    printf("%d\n",comparison);
+
+    cout << comparison << "\n";
     return 0;
 }
